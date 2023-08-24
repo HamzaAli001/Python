@@ -1,0 +1,15 @@
+print("Hello World.....!")
+
+
+# Example using sep and end in print()
+# Define variables
+name = "Alice"
+age = 30
+city = "Wonderland"
+# Print with custom separator and end character
+print("Name:", name, "Age:", age, "City:", city, sep=" | ", end=" - End of Info\n")
+# Output  Name: | Alice | Age: | 30 | City: | Wonderland - End of Info
+
+
+# By default, the print() function in Python uses a space as the separator (sep)
+# between values and a newline character (end="\n") at the end of each printed line.
