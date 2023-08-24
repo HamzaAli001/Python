@@ -1,0 +1,20 @@
+                            #introduction
+#   There are no constants in Python like there are in JavaScript (const).
+
+#   Let's talk about variables: When you write "a = 10" in code, "a" is like a tag and "10" is the value.
+#   In Python, memory is assigned to the variable's value, not the variable tag, unlike C and Java where memory is assigned to the variable tag.
+
+#   In Java/C:
+#   If you write "a = 10", a memory location, say 12145, is assigned to the "a" variable tag. If you later update "a" to "30", the memory at 12145 now holds "30".
+
+#   In Python:
+#   If you write "a = 10", a memory location, say 12145, holds the value "10". If you make another variable, say "b = 10", the memory location for "b" will be the same as 12145, because both hold the value 10.
+
+a=10; print(id(a)) # 2033978337872 will change at every execution.
+b=10; print(id(b)) # 2033978337872
+# Address is same, tags are different (a & b) 
+
+#   About Garbage Collector:
+#   Let's say we start with "a = 20", and memory location 54321 stores the value 20. Then, if we change "a" to 40, memory location 56789 stores 40.
+#   The tag of "a" moves from 54321 (with value 20) to 56789 (with value 40). Consequently, 54321 (with value 20) becomes an unreferenced object ( useless ) and removed by the garbage collector.
+
